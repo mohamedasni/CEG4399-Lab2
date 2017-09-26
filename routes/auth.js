@@ -1,6 +1,7 @@
 var express = require('express');
 var User = require('../models/User');
 var router = express.Router();
+var messageHelper = require('../utils/MessageSenderHelper');
 
 router.post('/register', function (req, res) {
 	// register post api call
