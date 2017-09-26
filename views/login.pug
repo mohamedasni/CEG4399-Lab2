@@ -2,4 +2,9 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  form(class="registerForm" action="/auth/register" method="post")
+    label Username: 
+    input(id="username" type="text" required="")
+    br
+    br
+    input(type="submit" value="Submit")

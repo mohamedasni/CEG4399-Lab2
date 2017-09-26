@@ -2,4 +2,18 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p Please fill out the following form.
+  form(class="registerForm" action="/auth/register" method="post")
+    label Username: 
+    input(id="username" type="text" required="")
+    br
+    br
+    label Phone number: 
+    input(id="phonenumber" type="number" required="")
+    br
+    br
+    label Password: 
+    input(id="password" type="password" required="")
+    br
+    br
+    input(type="submit" value="Submit")
