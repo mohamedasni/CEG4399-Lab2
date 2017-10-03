@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  form(class="login2Form" action="/auth/login" method="post")
+    label Beta: 
+    input(id="beta" type="text" required="")
+    br
+    br
+    label Password: 
+    input(id="password" type="password" required="")
+    br
+    br
+    input(type="submit" value="Submit")

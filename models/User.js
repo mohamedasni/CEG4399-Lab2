@@ -11,9 +11,12 @@ var UserSchema = new mongoose.Schema({
     required: true
   },
   alpha: {
-    type: String,
+    type: Number,
     required: true
-  }
+  },
+	beta: {
+		type: Number
+	}
 });
 
 module.exports = mongoose.model('User', UserSchema);

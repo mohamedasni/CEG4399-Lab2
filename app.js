@@ -9,9 +9,11 @@ var index = require('./routes/index');
 var auth = require('./routes/auth');
 var users = require('./routes/users');
 
-var messageHelper = require('./utils/MessageSenderHelper');
+var mongoose = require('mongoose').connect('mongodb://localhost:27017/ceg4399-lab2');
 
-messageHelper.sendSMS('Test with helper class');
+// var messageHelper = require('./utils/MessageSenderHelper');
+
+// messageHelper.sendSMS('Test with helper class');
 
 var app = express();
 

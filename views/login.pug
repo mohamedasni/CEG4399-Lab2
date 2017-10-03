@@ -2,7 +2,7 @@ extends layout
 
 block content
   h1= title
-  form(class="registerForm" action="/auth/register" method="post")
+  form(class="loginForm" action="/auth/login" method="post")
     label Username: 
     input(id="username" type="text" required="")
     br
